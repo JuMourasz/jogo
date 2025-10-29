@@ -473,7 +473,7 @@ if (!completedPhases.includes('phase2')) {
   localStorage.setItem('completedPhases', JSON.stringify(completedPhases));
 }
         setTimeout(() => {
-          window.location.href = "introfase3.html"; 
+          window.location.href = "{{ route('introfase3') }}";; 
         }, 2000);
       }
 

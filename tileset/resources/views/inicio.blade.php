@@ -90,13 +90,13 @@
 
   <script>
     function startGame() {
-      window.location.href = 'historia.html';
+      window.location.href = "{{ route('historia') }}";
     }
 
     document.addEventListener('selectstart', function(e) { e.preventDefault(); });
     document.addEventListener('contextmenu', function(e) { e.preventDefault(); });
     function selectPhases() {
-  window.location.href = 'selecao.html';
+  
 }
   </script>
 </body>

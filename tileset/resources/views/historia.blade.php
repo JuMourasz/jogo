@@ -209,7 +209,7 @@
     </div>
 
     <button class="skip-button" onclick="skipStory()" aria-label="Pular história e ir para a fase 1">Pular</button>
-    <button class="back-button" onclick="window.location.href = 'inicial.html';" aria-label="Voltar ao menu inicial">Voltar ao Menu</button>
+    <button class="back-button" onclick="window.location.href = "{{ route('inicio') }};" aria-label="Voltar ao menu inicial">Voltar ao Menu</button>
   </div>
 
   <script>
@@ -233,7 +233,7 @@
 
     function skipStory() {
       // Redireciona diretamente para a fase 1
-      window.location.href = 'introfase1.html';
+      window.location.href = "{{ route('introfase1') }}";
     }
 
     // Inicia a sequência

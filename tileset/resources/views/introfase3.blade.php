@@ -2,11 +2,11 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Introdução - Floresta</title>
+    <title>Introdução - Caverna</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-image: url('https://i.ibb.co/Sbf6zyH/fase2.jpg'); 
+            background-image: url('https://i.ibb.co/67DKCVHQ/de7120fd518fc6ed6cf00f0ff9b3f8f1.jpg');
             background-size: cover;
             background-position: center;
             color: #ffffff;
@@ -37,13 +37,13 @@
 </head>
 <body>
     <div class="intro-box">
-        <h1>Floresta - Fase 2</h1>
-        <p>A Floresta é densa e perigosa! Enfrente patrulheiros que se movem e use poções de velocidade para escapar. Dica: Planeje seus movimentos para evitar emboscadas.</p>
-        <p>Objetivo: Supere os desafios e chegue à próxima porta.</p>
+        <h1>Caverna - Fase 3</h1>
+        <p>Na Caverna, enfrente elites mais fortes e gerencie suas vidas com cuidado. Dica: Colete poções de força para batalhas mais fáceis e evite perdas desnecessárias.</p>
+        <p>Objetivo: Vença os desafios e avance para o próximo nível.</p>
         <button onclick="startPhase()">Começar Fase</button>
     </div>
     <script>
-        function startPhase() { window.location.href = 'fase_2.html'; }
+        function startPhase() { window.location.href = "{{ route('fase3') }}" ; }
     </script>
 </body>
 </html>

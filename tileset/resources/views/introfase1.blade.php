@@ -18,7 +18,7 @@
         <button onclick="startPhase()">Começar Fase</button>
     </div>
     <script>
-        function startPhase() { window.location.href = 'fase1.html'; }
+        function startPhase() { window.location.href = "{{ route('fase1') }}";}
     </script>
 </body>
 </html>

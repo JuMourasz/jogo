@@ -595,7 +595,7 @@ if (!completedPhases.includes('phase3')) {
   localStorage.setItem('completedPhases', JSON.stringify(completedPhases));
 }
     setTimeout(() => {
-        window.location.href = "introfase4.html";
+      window.location.href = "{{ route('introfase4') }}";;
     }, 2000);
 }
 

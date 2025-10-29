@@ -609,7 +609,7 @@ if (!completedPhases.includes('phase4')) {
   localStorage.setItem('completedPhases', JSON.stringify(completedPhases));
 }
         setTimeout(() => {
-          window.location.href = "fim.html";  
+          window.location.href = "{{ route('fim') }}";  
         }, 2000);
       }
 
