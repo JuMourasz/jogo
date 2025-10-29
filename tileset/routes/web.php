@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\UserController;
 
-
+Route::get('/inicio', function () {
+    return view('inicio');
+})->name('inicio');
