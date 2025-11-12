@@ -24,7 +24,7 @@
   background-color: #44cc44;
 }
 #back-to-menu {
-  right: 150px;
+  right: 30px;
 }
 #select-phases {
   right: 10px;
@@ -160,7 +160,6 @@
 <body>
   <div id="game-container" tabindex="0" aria-label="Área do jogo">
     <button id="back-to-menu" aria-label="Voltar ao menu inicial">Voltar ao Menu</button>
-<button id="select-phases" aria-label="Selecionar fases">Selecionar Fases</button>
     <div id="player" aria-label="Personagem do jogador">
       <img src="https://i.ibb.co/JFtsNsYv/pessoa-removebg-preview.png" alt="Personagem pixel-art com cabelo vermelho e roupa de fantasia" /> 
     </div>
@@ -379,11 +378,9 @@ if (!completedPhases.includes('phase1')) {
         container.focus();
       }
       document.getElementById('back-to-menu').addEventListener('click', () => {
-  window.location.href = 'inicial.html';
+  window.location.href = "{{ route('inicio') }}"
 });
-document.getElementById('select-phases').addEventListener('click', () => {
-  window.location.href = 'selecao.html';
-});
+
       window.addEventListener('keydown', (e) => {
         if(gameState.atDoor) {
           if(e.key === "Enter") {

@@ -80,7 +80,6 @@
   <h1 class="title">O Caminho Proibido</h1>
   <p class="subtitle">Uma aventura épica espera por você!</p>
   <button class="start-button" onclick="startGame()">Iniciar Jogo</button>
-  <button class="start-button" onclick="selectPhases()" style="margin-top: 20px;">Selecionar Fase</button>  <!-- Novo botão -->
   <div class="instructions">
     <p>Use as setas do teclado para mover seu personagem pelo mapa.</p>
     <p>Aproxime-se dos inimigos (X) para iniciar batalhas. Derrote-os para avançar!</p>

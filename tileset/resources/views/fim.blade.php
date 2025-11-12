@@ -54,7 +54,12 @@
   <div id="end-container">
     <h1>Parabéns! Você Venceu!</h1>
     <p>Você completou todas as fases de "O Caminho Proibido" e emergiu vitorioso. Sua jornada foi incrível e cheia de desafios. Obrigado por jogar!</p>
-    <button onclick= "window.location.href = "{{ route('inicio') }}>Jogar Novamente</button>  <!-- Redireciona para a Fase 1; ajuste o link se necessário -->
+    <button id="back-to-menu" aria-label="Voltar ao menu inicial">Voltar ao Menu</button>
   </div>
 </body>
+<script>
+document.getElementById('back-to-menu').addEventListener('click', () => {
+  window.location.href = "{{ route('inicio') }}"
+});
+</script>
 </html>
